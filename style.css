@@ -1,3 +1,97 @@
-body{
-    background-color: red;
+
+.carousel-item img{
+    width:auto;
+    height:500px;
+}
+
+#services .card img{
+    height: 250px;
+    width: auto;
+}
+
+.carousel-caption{
+    background-color:rgba(0,0,0,0.5);
+    font-weight: 600;
+}
+
+#services .card.private{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsYj_wH8ewndfxeD67jrbuEKes6H3VoJpGg&usqp=CAU);
+}
+#services .card.corporate{
+    background-image: url(https://centurioncenter.com/wp-content/uploads/2018/05/engage-employees-corporate-catering-services.jpg);
+}
+#services .card .card-body{
+    background-color: rgba(0,0,0,0.25);
+    color:#fff!important;
+}
+
+#custom-brand-slider li img{
+    height: 128px;
+    margin: 25px;
+}
+
+footer ul{
+    margin:0px;
+}
+
+footer ul>li{
+    list-style: none;
+    margin: 0px;
+}
+
+footer a{
+    text-decoration: none!important;
+    display: block;
+}
+
+footer ul>li:hover{
+    border-bottom: 1px solid #fff;
+}
+
+
+.newsletter .form-control{
+    background-color: gray;
+    color: #fff;
+    border:none;
+}
+
+footer .form-control, footer .btn{
+    border-radius: 0px;
+}
+
+.bg-teal{
+    background-color: teal;
+}
+
+.img-rounded{
+    border-radius: 50% !important;
+}
+
+
+#review img{
+    width: 128px;
+    height: 128px;
+}
+
+/* #grid .grid-item{width:200px;} */
+.grid .element-item img{
+    width:200px;
+}
+
+#vision{
+    background-image: url(https://thumbs.dreamstime.com/b/business-downtown-city-landscape-singapore-twilight-sc-scene-92384886.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#mission{
+    background-image: url(https://media.istockphoto.com/id/495508534/photo/aerial-view-on-spacious-pine-forest-at-sunrise.jpg?s=612x612&w=0&k=20&c=NUGzlDoCT9JzRtZW3Z8fGIImOZZhA4bBSHiTKQgHJHU=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-transparent-dark{
+    background-color: rgba(0,0,0,0.25);
+    color: #fff;
 }
