@@ -31,11 +31,8 @@ const OUR_CLIENTS = [
 
         renderBrandSlider();
 
-        lightGallery(document.getElementById('lightgallery'), {
-            speed: 500,
-            // ... other settings
-        });
-    
+
+        window.setInterval(runClock, 500);
     });
 })(jQuery)
 
@@ -57,4 +54,12 @@ function renderBrandSlider()
         animationSpeed: 1000
 
       });
+}
+
+function runClock()
+{
+    const currentTimeObj = new Date();
+    const myTime = `${currentTimeObj.getHours()}:${currentTimeObj.getMinutes()}:${currentTimeObj.getUTCSeconds()}`;
+    $('#clock').val(myTime);
+
 }
