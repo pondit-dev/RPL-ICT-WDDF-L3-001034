@@ -35,6 +35,7 @@ const OUR_CLIENTS = [
         window.setInterval(runClock, 500);
 
 
+        // contact form submit button
         $(document).on('click', '#contact-submit-btn', function(){
             const modal = $('#contact-submit-response-modal').modal('show');
         });
@@ -72,7 +73,9 @@ function renderBrandSlider()
 function runClock()
 {
     const currentTimeObj = new Date();
-    const myTime = `${currentTimeObj.getHours()}:${currentTimeObj.getMinutes()}:${currentTimeObj.getUTCSeconds()}`;
+    const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JULY', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    const month = currentTimeObj.getUTCMonth();
+    const myTime = `${currentTimeObj.getDate()}  ${months?.[month]} ${currentTimeObj.getFullYear()} ${currentTimeObj.getHours()}:${currentTimeObj.getMinutes()}:${currentTimeObj.getUTCSeconds()}`;
     $('#clock').val(myTime);
 
 }
