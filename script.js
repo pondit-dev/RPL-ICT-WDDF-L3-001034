@@ -33,6 +33,11 @@ const OUR_CLIENTS = [
 
 
         window.setInterval(runClock, 500);
+
+
+        $(document).on('click', '#contact-submit-btn', function(){
+            const modal = $('#contact-submit-response-modal').modal('show');
+        });
     });
 })(jQuery)
 

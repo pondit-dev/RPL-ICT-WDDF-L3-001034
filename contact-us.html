@@ -98,7 +98,7 @@
                         <label for="subject">Subject</label>
                         <textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                     
-                        <input type="submit" class="btn btn-primary mt-3" value="Submit">
+                        <input type="button" id="contact-submit-btn" class="btn btn-primary mt-3" value="Submit">
                     </div>
                         
                   </form>
@@ -154,6 +154,26 @@
             </div>
         </div>
         </footer>
+
+
+        <div id="contact-submit-response-modal"  class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                  <h5 class="modal-title">Feedback has been sent!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="https://i.pinimg.com/originals/fe/c2/39/fec23921611cc3abb6db1774e284a251.gif" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="javascript:window.location.reload();"><i class="fa fa-sync"></i> Reload</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
 
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
