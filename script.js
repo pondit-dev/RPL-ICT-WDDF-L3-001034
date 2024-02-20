@@ -38,6 +38,14 @@ const OUR_CLIENTS = [
         $(document).on('click', '#contact-submit-btn', function(){
             const modal = $('#contact-submit-response-modal').modal('show');
         });
+
+
+        $(document).on('click', '.card-gallary img', function(){
+            const html = `<img src="${this.src}" class="img-fluid">`;
+            $('#galary-modal .modal-body').html(html);
+            $('#galary-modal .modal-title').html(this.alt);
+            $('#galary-modal').modal('show');
+        });
     });
 })(jQuery)
 
